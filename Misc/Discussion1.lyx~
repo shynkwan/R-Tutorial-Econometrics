@@ -1,0 +1,708 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Discussion Session 1
+\end_layout
+
+\begin_layout Section
+Introduction to R 
+\end_layout
+
+\begin_layout Subsection
+Method 2
+\end_layout
+
+\begin_layout Standard
+The estimate of OLS is calculated using the following formula:
+\begin_inset Formula 
+\begin{eqnarray*}
+\hat{\beta_{OLS}} & = & (X'X)^{-1}X'Y
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stargazer Latex Output of OLS Fit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{@{
+\backslash
+extracolsep{5pt}}lc}  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   & 
+\backslash
+multicolumn{1}{c}{
+\backslash
+textit{Dependent variable:}} 
+\backslash
+
+\backslash
+  
+\backslash
+cline{2-2}  
+\backslash
+
+\backslash
+[-1.8ex] & y 
+\backslash
+
+\backslash
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   x1 & $-$2.987$^{***}$ 
+\backslash
+
+\backslash
+    & (0.049) 
+\backslash
+
+\backslash
+    & 
+\backslash
+
+\backslash
+   x2 & 3.003$^{***}$ 
+\backslash
+
+\backslash
+    & (0.016) 
+\backslash
+
+\backslash
+    & 
+\backslash
+
+\backslash
+   x3 & $-$1.907$^{***}$ 
+\backslash
+
+\backslash
+    & (0.071) 
+\backslash
+
+\backslash
+    & 
+\backslash
+
+\backslash
+   x4 & 4.976$^{***}$ 
+\backslash
+
+\backslash
+    & (0.050) 
+\backslash
+
+\backslash
+    & 
+\backslash
+
+\backslash
+   Constant & 1.754$^{***}$ 
+\backslash
+
+\backslash
+    & (0.552) 
+\backslash
+
+\backslash
+    & 
+\backslash
+
+\backslash
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  Observations & 1,000 
+\backslash
+
+\backslash
+  R$^{2}$ & 0.980 
+\backslash
+
+\backslash
+  Adjusted R$^{2}$ & 0.980 
+\backslash
+
+\backslash
+  Residual Std.
+ Error & 3.065 (df = 995) 
+\backslash
+
+\backslash
+  F Statistic & 12,287.690$^{***}$ (df = 4; 995) 
+\backslash
+
+\backslash
+  
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  
+\backslash
+textit{Note:}  & 
+\backslash
+multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} 
+\backslash
+
+\backslash
+  
+\backslash
+end{tabular} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Single Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{@{
+\backslash
+extracolsep{5pt}}lcccc}  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   & 
+\backslash
+multicolumn{4}{c}{
+\backslash
+textit{Dependent variable:}} 
+\backslash
+
+\backslash
+  
+\backslash
+cline{2-5}  
+\backslash
+
+\backslash
+[-1.8ex] & 
+\backslash
+multicolumn{4}{c}{y} 
+\backslash
+
+\backslash
+  
+\backslash
+
+\backslash
+[-1.8ex] & (1) & (2) & (3) & (4)
+\backslash
+
+\backslash
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]   x1 & $-$2.987$^{***}$ & $-$2.443$^{***}$ & $-$2.858$^{***}$ & $-$2.863$^{*
+**}$ 
+\backslash
+
+\backslash
+    & (0.049) & (0.338) & (0.162) & (0.161) 
+\backslash
+
+\backslash
+    & & & & 
+\backslash
+
+\backslash
+   x2 & 3.003$^{***}$ &  & 2.972$^{***}$ & 2.968$^{***}$ 
+\backslash
+
+\backslash
+    & (0.016) &  & (0.051) & (0.051) 
+\backslash
+
+\backslash
+    & & & & 
+\backslash
+
+\backslash
+   x3 & $-$1.907$^{***}$ &  &  & 0.408$^{*}$ 
+\backslash
+
+\backslash
+    & (0.071) &  &  & (0.222) 
+\backslash
+
+\backslash
+    & & & & 
+\backslash
+
+\backslash
+   x4 & 4.976$^{***}$ &  &  &  
+\backslash
+
+\backslash
+    & (0.050) &  &  &  
+\backslash
+
+\backslash
+    & & & & 
+\backslash
+
+\backslash
+   Constant & 1.754$^{***}$ & 32.430$^{***}$ & 21.455$^{***}$ & 20.712$^{***}$
+ 
+\backslash
+
+\backslash
+    & (0.552) & (3.451) & (1.661) & (1.707) 
+\backslash
+
+\backslash
+    & & & & 
+\backslash
+
+\backslash
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  Observations & 1,000 & 1,000 & 1,000 & 1,000 
+\backslash
+
+\backslash
+  R$^{2}$ & 0.980 & 0.050 & 0.783 & 0.784 
+\backslash
+
+\backslash
+  Adjusted R$^{2}$ & 0.980 & 0.049 & 0.783 & 0.783 
+\backslash
+
+\backslash
+  Residual Std.
+ Error & 3.065 (df = 995) & 21.179 (df = 998) & 10.124 (df = 997) & 10.112 (df
+ = 996) 
+\backslash
+
+\backslash
+  F Statistic & 12,287.690$^{***}$ (df = 4; 995) & 52.303$^{***}$ (df = 1;
+ 998) & 1,799.815$^{***}$ (df = 2; 997) & 1,203.870$^{***}$ (df = 3; 996)
+ 
+\backslash
+
+\backslash
+  
+\backslash
+hline  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]  
+\backslash
+textit{Note:}  & 
+\backslash
+multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} 
+\backslash
+
+\backslash
+  
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Multiple Models
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Plots
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:No-Name"
+
+\end_inset
+
+ represents the predicted value of 
+\begin_inset Formula $y$
+\end_inset
+
+ for various values of 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ holding all other variables 0.
+ Specifically, we are comparing:
+\begin_inset Formula 
+\begin{eqnarray*}
+y_{true} & = & \beta_{0}+\beta_{3}x_{3}\\
+y_{predicted} & = & \hat{\beta}_{0}+\hat{\beta}_{3}x_{3}
+\end{eqnarray*}
+
+\end_inset
+
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Plot-of-predicted"
+
+\end_inset
+
+ represents same plot with a different color.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../Documents/dis12.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:No-Name"
+
+\end_inset
+
+Predicted value of 
+\begin_inset Formula $y$
+\end_inset
+
+ for various values of 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../Documents/Dis1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Plot-of-predicted"
+
+\end_inset
+
+Predicted value of 
+\begin_inset Formula $y$
+\end_inset
+
+ for various values of 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
